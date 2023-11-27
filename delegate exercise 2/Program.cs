@@ -25,6 +25,8 @@ class program
         mens.RemoveAll((men) => men.age < 18);
         mens.ForEach((men) => Console.WriteLine(men));
         Console.WriteLine("+-------------------------------+\n");
+
+        Console.WriteLine("\tMan younger then 100:");
         mens.FindAll((men)=>men.age < 100).ForEach((men)=>Console.WriteLine(men));
     }
 
